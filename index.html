@@ -1,0 +1,1275 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>陈小姐 & 查先生的吃席邀请</title>
+    <meta name="description" content="2026.10.03 中午，安庆农村酒席，欢迎空腹赴约，带笑入席。" />
+    <meta name="theme-color" content="#fff8f1" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="陈小姐 & 查先生的吃席邀请" />
+    <meta property="og:description" content="2026.10.03 中午，安庆农村酒席，欢迎空腹赴约，带笑入席。" />
+    <meta property="og:image" content="images/share-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="陈小姐和查先生的婚礼邀请封面" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="陈小姐 & 查先生的吃席邀请" />
+    <meta name="twitter:description" content="2026.10.03 中午，安庆农村酒席，欢迎空腹赴约，带笑入席。" />
+    <meta name="twitter:image" content="images/share-cover.jpg" />
+    <style>
+      :root {
+        --ink: #241d1b;
+        --muted: #746760;
+        --paper: #fffaf3;
+        --red: #b92835;
+        --red-soft: #ffe6e5;
+        --blue: #84c9e8;
+        --blue-deep: #176f8d;
+        --blue-soft: #e8f7fc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: ui-serif, "Songti SC", "Noto Serif CJK SC", SimSun, serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .site-shell {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 12% 18%, rgba(132, 201, 232, 0.32), transparent 24rem),
+          radial-gradient(circle at 90% 48%, rgba(255, 230, 229, 0.58), transparent 22rem),
+          linear-gradient(180deg, #fffaf3 0%, #fff6ec 38%, #eff9fc 72%, #fff4eb 100%);
+      }
+
+      .site-shell::before {
+        content: "";
+        position: absolute;
+        inset: 92vh 0 auto;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(132, 201, 232, 0.75), rgba(185, 40, 53, 0.36), transparent);
+        pointer-events: none;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 92vh;
+        display: grid;
+        align-items: end;
+        isolation: isolate;
+      }
+
+      .hero-photo {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 58% 46%;
+      }
+
+      .hero-shade {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+          linear-gradient(180deg, rgba(31, 50, 58, 0.1) 0%, rgba(28, 24, 22, 0.15) 42%, rgba(36, 29, 27, 0.84) 100%),
+          linear-gradient(90deg, rgba(17, 31, 36, 0.2), transparent 52%);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 6;
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 0 0 clamp(38px, 7vh, 72px);
+        color: #fffdf8;
+      }
+
+      .eyebrow,
+      .section-heading p {
+        margin: 0 0 10px;
+        color: var(--red);
+        font: 700 0.75rem/1.2 ui-sans-serif, system-ui, sans-serif;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .section-heading p {
+        color: var(--blue-deep);
+      }
+
+      .hero .eyebrow {
+        color: #ffe5dc;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2,
+      p,
+      a,
+      strong,
+      span {
+        overflow-wrap: anywhere;
+      }
+
+      h1 {
+        max-width: 940px;
+        margin-bottom: 18px;
+        font-size: clamp(3.1rem, 8vw, 6.8rem);
+        font-weight: 600;
+        line-height: 0.98;
+      }
+
+      .hero-name-line {
+        display: inline-block;
+        overflow-wrap: normal;
+        white-space: nowrap;
+      }
+
+      .hero-line {
+        max-width: 620px;
+        margin-bottom: 26px;
+        font-size: clamp(1.08rem, 2vw, 1.5rem);
+        line-height: 1.7;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero-actions a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.58);
+        border-radius: 999px;
+        padding: 11px 18px;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font: 700 0.95rem/1 ui-sans-serif, system-ui, sans-serif;
+        backdrop-filter: blur(10px);
+      }
+
+      .page-pets {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .pet {
+        position: absolute;
+        width: clamp(118px, 13vw, 180px);
+        filter: drop-shadow(0 18px 24px rgba(36, 29, 27, 0.18));
+        transform-origin: 50% 85%;
+        --scroll-lift: 0px;
+        animation: petFloat 4.8s ease-in-out infinite;
+      }
+
+      .pet img {
+        width: 100%;
+      }
+
+      .pet-invite {
+        top: 76vh;
+        right: clamp(12px, 5vw, 80px);
+      }
+
+      .pet-dance {
+        top: 178vh;
+        left: clamp(10px, 4vw, 72px);
+        animation-name: petDance;
+        animation-delay: -1.5s;
+      }
+
+      .pet-laugh {
+        top: 292vh;
+        right: clamp(8px, 4vw, 70px);
+        animation-delay: -2.4s;
+      }
+
+      .pet-wink {
+        top: 382vh;
+        left: clamp(14px, 7vw, 110px);
+        animation-name: petWink;
+        animation-delay: -0.8s;
+      }
+
+      .pet-bow {
+        top: 112vh;
+        left: clamp(8px, 3vw, 58px);
+        width: clamp(96px, 11vw, 150px);
+        animation-delay: -2.8s;
+      }
+
+      .pet-cheer {
+        top: 224vh;
+        right: clamp(6px, 3vw, 60px);
+        width: clamp(96px, 11vw, 150px);
+        animation-name: petDance;
+        animation-delay: -3.3s;
+      }
+
+      .pet-heart {
+        top: 324vh;
+        left: clamp(8px, 4vw, 70px);
+        width: clamp(96px, 11vw, 150px);
+        animation-name: petWink;
+        animation-delay: -1.7s;
+      }
+
+      .pet-spin {
+        top: 446vh;
+        right: clamp(8px, 4vw, 72px);
+        width: clamp(96px, 11vw, 150px);
+        animation-delay: -4.1s;
+      }
+
+      @keyframes petFloat {
+        0%,
+        100% {
+          translate: 0 var(--scroll-lift);
+          rotate: -2deg;
+        }
+
+        50% {
+          translate: 0 calc(var(--scroll-lift) - 14px);
+          rotate: 3deg;
+        }
+      }
+
+      @keyframes petDance {
+        0%,
+        100% {
+          translate: 0 var(--scroll-lift);
+          rotate: -7deg;
+        }
+
+        35% {
+          translate: 8px calc(var(--scroll-lift) - 16px);
+          rotate: 8deg;
+        }
+
+        70% {
+          translate: -6px calc(var(--scroll-lift) - 8px);
+          rotate: -3deg;
+        }
+      }
+
+      @keyframes petWink {
+        0%,
+        100% {
+          scale: 1;
+          rotate: -4deg;
+          translate: 0 var(--scroll-lift);
+        }
+
+        48% {
+          scale: 1.06;
+          rotate: 4deg;
+          translate: 0 calc(var(--scroll-lift) - 10px);
+        }
+      }
+
+      .section-band {
+        position: relative;
+        z-index: 3;
+        width: min(1040px, calc(100% - 36px));
+        margin: 0 auto;
+        padding: clamp(42px, 8vw, 86px) 0;
+      }
+
+      .intro {
+        font-size: clamp(1.35rem, 3vw, 2.4rem);
+        line-height: 1.65;
+        text-align: center;
+      }
+
+      .intro p {
+        max-width: 880px;
+        margin: 0 auto;
+      }
+
+      .section-heading {
+        margin-bottom: 24px;
+      }
+
+      .section-heading h2 {
+        margin-bottom: 0;
+        font-size: clamp(2rem, 5vw, 4.1rem);
+        font-weight: 600;
+        line-height: 1.1;
+      }
+
+      .title-line {
+        display: block;
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .joke-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .detail-card,
+      .joke-card,
+      .final-box {
+        border: 1px solid rgba(23, 111, 141, 0.18);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.66);
+        box-shadow: 0 18px 50px rgba(55, 89, 103, 0.09);
+      }
+
+      .detail-card {
+        min-height: 140px;
+        padding: 22px;
+      }
+
+      .joke-card {
+        min-height: 150px;
+        padding: 18px;
+      }
+
+      .detail-card span {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--muted);
+        font: 700 0.82rem/1.2 ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .joke-card span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 34px;
+        min-height: 34px;
+        margin-bottom: 14px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, rgba(132, 201, 232, 0.22), rgba(255, 230, 229, 0.76));
+        color: var(--red);
+        font: 800 0.9rem/1 ui-sans-serif, system-ui, sans-serif;
+      }
+
+      .detail-card strong {
+        display: block;
+        font-size: clamp(1.35rem, 2.5vw, 2.15rem);
+        font-weight: 600;
+        line-height: 1.28;
+      }
+
+      .joke-card strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.15rem;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .joke-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .note {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .transform {
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(300px, 1fr);
+        gap: clamp(24px, 5vw, 54px);
+        align-items: center;
+      }
+
+      .transform .section-heading {
+        margin-bottom: 0;
+      }
+
+      .morph-card {
+        cursor: pointer;
+        display: grid;
+        gap: 14px;
+      }
+
+      .morph-card input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .morph-stage {
+        position: relative;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        border-radius: 8px;
+        background:
+          radial-gradient(circle at 24% 16%, rgba(255, 255, 255, 0.94) 0 7%, transparent 8%),
+          radial-gradient(circle at 80% 22%, rgba(255, 231, 122, 0.7) 0 8%, transparent 9%),
+          linear-gradient(135deg, var(--blue-soft) 0%, #fff1df 52%, var(--red-soft) 100%);
+        box-shadow: 0 24px 70px rgba(44, 43, 39, 0.16);
+      }
+
+      .morph-stage::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: inherit;
+        pointer-events: none;
+      }
+
+      .morph-photo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+      }
+
+      .morph-photo.real {
+        opacity: 0;
+        object-position: 50% 42%;
+        transform: scale(1.04);
+      }
+
+      .morph-photo.real.real-2 {
+        object-position: 50% 50%;
+      }
+
+      .morph-photo.real.real-3 {
+        object-position: 50% 40%;
+      }
+
+      .morph-photo.real.real-4 {
+        object-position: 50% 48%;
+      }
+
+      .morph-photo.real.real-5 {
+        object-position: 50% 44%;
+      }
+
+      .morph-photo.chibi {
+        opacity: 0;
+        filter: saturate(1.08);
+        transform: scale(1) rotate(0deg);
+        animation: chibiCycle 10s linear infinite;
+      }
+
+      .morph-photo.chibi.frame-2 {
+        animation-delay: 2s;
+      }
+
+      .morph-photo.chibi.frame-3 {
+        animation-delay: 4s;
+      }
+
+      .morph-photo.chibi.frame-4 {
+        animation-delay: 6s;
+      }
+
+      .morph-photo.chibi.frame-5 {
+        animation-delay: 8s;
+      }
+
+      .morph-card input:checked + .morph-stage .real {
+        opacity: 0;
+        transform: scale(1);
+        filter: none;
+        animation: realCycle 12.5s linear infinite;
+      }
+
+      .morph-card input:checked + .morph-stage .real-2 {
+        animation-delay: 2.5s;
+      }
+
+      .morph-card input:checked + .morph-stage .real-3 {
+        animation-delay: 5s;
+      }
+
+      .morph-card input:checked + .morph-stage .real-4 {
+        animation-delay: 7.5s;
+      }
+
+      .morph-card input:checked + .morph-stage .real-5 {
+        animation-delay: 10s;
+      }
+
+      .morph-card input:checked + .morph-stage .chibi {
+        opacity: 0;
+        transform: scale(0.96) rotate(1deg);
+        filter: blur(2px) saturate(0.9);
+        animation: none;
+      }
+
+      @keyframes chibiCycle {
+        0%,
+        18% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+
+        21%,
+        97% {
+          opacity: 0;
+          transform: scale(0.985) rotate(1deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      @keyframes realCycle {
+        0%,
+        18% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        21%,
+        97% {
+          opacity: 0;
+          transform: scale(1.02);
+        }
+
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .chibi-pop {
+        position: absolute;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(185, 40, 53, 0.9);
+        border-radius: 999px;
+        padding: 9px 12px;
+        background: rgba(255, 252, 241, 0.9);
+        color: var(--red);
+        font: 800 0.86rem/1 ui-sans-serif, system-ui, sans-serif;
+        box-shadow: 0 10px 24px rgba(92, 42, 35, 0.16);
+        transform-origin: center;
+        transition: opacity 360ms ease, transform 360ms ease;
+        animation: popFloat 3.4s ease-in-out infinite;
+      }
+
+      .chibi-pop.pop-feast {
+        top: 16px;
+        left: 16px;
+        transform: rotate(-8deg);
+      }
+
+      .chibi-pop.pop-candy {
+        top: 18%;
+        right: 14px;
+        color: #10677e;
+        border-color: rgba(16, 103, 126, 0.75);
+        animation-delay: -1.2s;
+      }
+
+      .chibi-pop.pop-rice {
+        left: 18px;
+        bottom: 72px;
+        color: #7b4b13;
+        border-color: rgba(123, 75, 19, 0.7);
+        animation-delay: -2.1s;
+      }
+
+      .chibi-spark {
+        position: absolute;
+        z-index: 1;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ffd84d;
+        box-shadow:
+          44px 38px 0 #ff8fa0,
+          96px -10px 0 #84c9e8,
+          170px 42px 0 #b92835,
+          228px -2px 0 #ffe5dc;
+        opacity: 0.88;
+        transform: translate(34px, 54px);
+        transition: opacity 360ms ease, transform 360ms ease;
+      }
+
+      .morph-card input:checked + .morph-stage .chibi-pop,
+      .morph-card input:checked + .morph-stage .chibi-spark {
+        opacity: 0;
+        transform: translateY(10px) scale(0.86);
+        pointer-events: none;
+      }
+
+      @keyframes popFloat {
+        0%,
+        100% {
+          translate: 0 0;
+        }
+
+        50% {
+          translate: 0 -7px;
+        }
+      }
+
+      .morph-pill {
+        position: absolute;
+        z-index: 3;
+        left: 16px;
+        bottom: 16px;
+        border-radius: 999px;
+        padding: 10px 14px;
+        background: rgba(36, 29, 27, 0.72);
+        color: white;
+        font: 700 0.88rem/1 ui-sans-serif, system-ui, sans-serif;
+        backdrop-filter: blur(12px);
+      }
+
+      .morph-pill::before {
+        content: "换个画风";
+      }
+
+      .morph-card input:checked + .morph-stage .morph-pill::before {
+        content: "再换一次";
+      }
+
+      .morph-copy {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .gallery {
+        position: relative;
+        padding-top: clamp(42px, 8vw, 78px);
+      }
+
+      .gallery::before {
+        content: "";
+        position: absolute;
+        inset: 24px -18px auto;
+        height: calc(100% - 16px);
+        z-index: 0;
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(232, 247, 252, 0.82), rgba(255, 246, 236, 0.72) 48%, rgba(255, 230, 229, 0.58));
+      }
+
+      .photo-carousel {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        width: min(620px, 100%);
+        margin: 0 auto;
+      }
+
+      .carousel-stage {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 18px 50px rgba(72, 40, 32, 0.1);
+        background:
+          linear-gradient(135deg, rgba(255, 250, 243, 0.96), rgba(232, 247, 252, 0.86)),
+          #fffaf3;
+        aspect-ratio: 3 / 4;
+        max-height: min(72vh, 720px);
+      }
+
+      .carousel-track {
+        height: 100%;
+      }
+
+      .carousel-slide {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+        animation: photoCycle 39s linear infinite;
+      }
+
+      .carousel-slide:nth-child(2) {
+        animation-delay: 3s;
+      }
+
+      .carousel-slide:nth-child(3) {
+        animation-delay: 6s;
+      }
+
+      .carousel-slide:nth-child(4) {
+        animation-delay: 9s;
+      }
+
+      .carousel-slide:nth-child(5) {
+        animation-delay: 12s;
+      }
+
+      .carousel-slide:nth-child(6) {
+        animation-delay: 15s;
+      }
+
+      .carousel-slide:nth-child(7) {
+        animation-delay: 18s;
+      }
+
+      .carousel-slide:nth-child(8) {
+        animation-delay: 21s;
+      }
+
+      .carousel-slide:nth-child(9) {
+        animation-delay: 24s;
+      }
+
+      .carousel-slide:nth-child(10) {
+        animation-delay: 27s;
+      }
+
+      .carousel-slide:nth-child(11) {
+        animation-delay: 30s;
+      }
+
+      .carousel-slide:nth-child(12) {
+        animation-delay: 33s;
+      }
+
+      .carousel-slide:nth-child(13) {
+        animation-delay: 36s;
+      }
+
+      .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      @keyframes photoCycle {
+        0%,
+        6.8% {
+          opacity: 1;
+        }
+
+        8.6%,
+        98.2% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+
+      .final {
+        max-width: 760px;
+      }
+
+      .final p {
+        margin-bottom: 18px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.9;
+      }
+
+      .final-box {
+        display: grid;
+        gap: 8px;
+        padding: 22px;
+      }
+
+      .final-box strong {
+        font-size: 1.35rem;
+        font-weight: 600;
+      }
+
+      .final-box span {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      footer {
+        padding: 44px 18px 56px;
+        background: linear-gradient(135deg, var(--red), #8d1f2a 62%, var(--blue-deep));
+        color: #fff8ef;
+        text-align: center;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .chibi-pop,
+        .carousel-slide,
+        .morph-photo.chibi,
+        .pet {
+          animation: none;
+        }
+
+        .morph-photo.chibi.frame-1 {
+          opacity: 1;
+        }
+
+        .carousel-slide:first-child {
+          opacity: 1;
+        }
+      }
+
+      footer p {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      footer strong {
+        font-size: clamp(1.8rem, 5vw, 3.6rem);
+        font-weight: 600;
+      }
+
+      @media (max-width: 760px) {
+        .hero {
+          min-height: 82svh;
+        }
+
+        .hero-photo {
+          object-position: 55% 40%;
+        }
+
+        .hero-content {
+          width: min(calc(100vw - 28px), 520px);
+          padding-bottom: 30px;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 14vw, 4.2rem);
+        }
+
+        .hero-line {
+          margin-bottom: 18px;
+          font-size: 1.02rem;
+          line-height: 1.6;
+        }
+
+        .hero-name-line {
+          display: block;
+        }
+
+        .hero-actions a {
+          flex: 1 1 100%;
+          width: 100%;
+          min-width: 0;
+        }
+
+        .page-pets {
+          z-index: 2;
+        }
+
+        .pet {
+          width: clamp(70px, 21vw, 96px);
+          opacity: 0.86;
+        }
+
+        .pet-invite {
+          top: 82vh;
+          right: 4px;
+        }
+
+        .pet-dance {
+          top: 206vh;
+          left: 2px;
+        }
+
+        .pet-laugh {
+          display: none;
+        }
+
+        .pet-wink {
+          top: 430vh;
+          left: auto;
+          right: 2px;
+        }
+
+        .pet-bow {
+          top: 112vh;
+          left: 2px;
+          display: none;
+        }
+
+        .pet-cheer {
+          top: 238vh;
+          right: 2px;
+          display: none;
+        }
+
+        .pet-heart {
+          top: 340vh;
+          left: 2px;
+          display: none;
+        }
+
+        .pet-spin {
+          top: 452vh;
+          right: 2px;
+        }
+
+        .section-band {
+          width: min(calc(100vw - 28px), 520px);
+          padding: 34px 0;
+        }
+
+        .intro {
+          font-size: clamp(1.12rem, 5vw, 1.45rem);
+          line-height: 1.65;
+        }
+
+        .section-heading {
+          margin-bottom: 18px;
+        }
+
+        .section-heading h2 {
+          font-size: clamp(1.78rem, 9vw, 2.75rem);
+        }
+
+        .detail-grid,
+        .joke-grid,
+        .transform,
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+
+        .detail-card {
+          min-height: auto;
+          padding: 18px;
+        }
+
+        .joke-card {
+          min-height: auto;
+          padding: 16px;
+        }
+
+        .morph-stage,
+        .carousel-stage {
+          aspect-ratio: 3 / 4;
+        }
+
+        .photo-carousel {
+          width: min(360px, 100%);
+        }
+
+        .carousel-stage {
+          max-height: min(58svh, 520px);
+        }
+
+        .gallery::before {
+          inset-inline: -8px;
+        }
+
+        .chibi-pop {
+          padding: 8px 10px;
+          font-size: 0.78rem;
+        }
+
+        .chibi-spark {
+          transform: translate(24px, 48px) scale(0.82);
+        }
+      }
+
+      @media (max-width: 420px) {
+        .hero-content,
+        .section-band {
+          width: calc(100vw - 24px);
+        }
+
+        h1 {
+          font-size: clamp(2.55rem, 13vw, 3.4rem);
+        }
+
+        .hero-actions {
+          gap: 8px;
+        }
+
+        .hero-actions a {
+          min-height: 40px;
+          padding: 10px 14px;
+          font-size: 0.9rem;
+        }
+
+        .section-band {
+          padding: 30px 0;
+        }
+
+        .photo-carousel {
+          width: min(330px, 100%);
+        }
+
+        .carousel-stage {
+          max-height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="site-shell">
+      <div class="page-pets" aria-hidden="true">
+        <span class="pet pet-invite"><img src="images/chibi-invite.png" alt="" /></span>
+        <span class="pet pet-dance"><img src="images/chibi-dance.png" alt="" /></span>
+        <span class="pet pet-laugh"><img src="images/chibi-laugh.png" alt="" /></span>
+        <span class="pet pet-wink"><img src="images/chibi-wink.png" alt="" /></span>
+        <span class="pet pet-bow"><img src="images/chibi-bow.png" alt="" /></span>
+        <span class="pet pet-cheer"><img src="images/chibi-cheer.png" alt="" /></span>
+        <span class="pet pet-heart"><img src="images/chibi-heart.png" alt="" /></span>
+        <span class="pet pet-spin"><img src="images/chibi-spin.png" alt="" /></span>
+      </div>
+      <section class="hero" aria-label="婚礼邀请函封面">
+        <img class="hero-photo" src="images/couple-seaside.jpg" alt="陈小姐和查先生的海边婚纱照" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Wedding Lunch Invitation</p>
+          <h1>
+            <span class="hero-name-line">陈小姐 &</span>
+            <span class="hero-name-line">查先生</span>
+          </h1>
+          <p class="hero-line">10.03 中午，我们在安庆摆一桌正式的饭局，俗称：结婚。</p>
+          <div class="hero-actions" aria-label="快速查看邀请信息">
+            <a href="#details">看时间地点</a>
+            <a href="#guide">吃席攻略</a>
+            <a href="#photos">看照片</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-band">
+        <p>
+          仪式从简，饭菜从不简单。那天家里备好酒菜，亲友坐一坐，
+          筷子一动，祝福就算正式签收。
+        </p>
+      </section>
+
+      <section id="details" class="details section-band">
+        <div class="section-heading">
+          <p>请柬重点</p>
+          <h2>记得空腹来，留点战斗力</h2>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-card">
+            <span>日期</span>
+            <strong>2026.10.03</strong>
+          </div>
+          <div class="detail-card">
+            <span>时间</span>
+            <strong>中午开席</strong>
+          </div>
+          <div class="detail-card">
+            <span>地点</span>
+            <strong>安庆农村酒席，精准投喂点待补</strong>
+          </div>
+        </div>
+        <p class="note">地址还在补充中，确定后会直接更新到这个链接里。放心，不会让大家靠闻香味导航。</p>
+      </section>
+
+      <section id="guide" class="section-band" aria-labelledby="guide-title">
+        <div class="section-heading">
+          <p>吃席作战指南</p>
+          <h2 id="guide-title">请按民间优秀传统发挥</h2>
+        </div>
+        <div class="joke-grid">
+          <div class="joke-card">
+            <span>01</span>
+            <strong>穿搭建议</strong>
+            <p>好看就行，裤腰最好有一点弹性，尊重厨师劳动成果。</p>
+          </div>
+          <div class="joke-card">
+            <span>02</span>
+            <strong>入席心态</strong>
+            <p>不用拘谨，都是自己人。唯一竞争项目是：谁先夹到爱吃的菜。</p>
+          </div>
+          <div class="joke-card">
+            <span>03</span>
+            <strong>祝福方式</strong>
+            <p>真诚祝福即可，普通话、方言、眼神鼓励都支持。</p>
+          </div>
+          <div class="joke-card">
+            <span>04</span>
+            <strong>撤退原则</strong>
+            <p>吃饱再走。没吃饱属于流程异常，需要现场复盘。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="transform section-band" aria-labelledby="transform-title">
+        <div class="section-heading">
+          <p>小彩蛋</p>
+          <h2 id="transform-title">
+            <span class="title-line">轻轻点一下</span>
+            <span class="title-line">照片换个画风</span>
+          </h2>
+        </div>
+
+        <label class="morph-card">
+          <input type="checkbox" aria-label="切换 Q 版形象和真人照片" />
+          <span class="morph-stage">
+            <img class="morph-photo real real-1" src="images/couple-close.jpg" alt="陈小姐和查先生近景婚纱照" />
+            <img class="morph-photo real real-2" src="images/new-photo-01.jpg" alt="" />
+            <img class="morph-photo real real-3" src="images/new-photo-03.jpg" alt="" />
+            <img class="morph-photo real real-4" src="images/new-photo-11.jpg" alt="" />
+            <img class="morph-photo real real-5" src="images/new-photo-12.jpg" alt="" />
+            <img class="morph-photo chibi frame-1" src="images/couple-chibi.png" alt="陈小姐和查先生的 Q 版婚礼形象" />
+            <img class="morph-photo chibi frame-2" src="images/chibi-heart.png" alt="" />
+            <img class="morph-photo chibi frame-3" src="images/chibi-cheer.png" alt="" />
+            <img class="morph-photo chibi frame-4" src="images/chibi-bow.png" alt="" />
+            <img class="morph-photo chibi frame-5" src="images/chibi-spin.png" alt="" />
+            <span class="chibi-spark" aria-hidden="true"></span>
+            <span class="chibi-pop pop-feast" aria-hidden="true">开席啦</span>
+            <span class="chibi-pop pop-candy" aria-hidden="true">喜糖 KPI</span>
+            <span class="chibi-pop pop-rice" aria-hidden="true">干饭代表</span>
+            <span class="morph-pill"></span>
+          </span>
+          <span class="morph-copy">这里藏了一个互动小彩蛋，轻轻点一下，画风会变一下。再点一次，还能切回来继续可爱。</span>
+        </label>
+      </section>
+
+      <section id="photos" class="gallery section-band" aria-label="照片">
+        <div class="section-heading">
+          <p>Photo Gallery</p>
+          <h2>我们的照片</h2>
+        </div>
+        <div class="photo-carousel" data-carousel>
+          <div class="carousel-stage">
+            <div class="carousel-track">
+              <figure class="carousel-slide">
+                <img src="images/new-photo-01.jpg" alt="花园秋千双人婚纱照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-02.jpg" alt="花园单人婚纱照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-03.jpg" alt="黑白礼服双人婚纱照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-04.jpg" alt="新郎黑色礼服单人照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-05.jpg" alt="中式喜服双人正面照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-06.jpg" alt="中式喜服横版合影" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-07.jpg" alt="新娘白纱单人照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-08.jpg" alt="红底新郎手势照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-09.jpg" alt="红底中式双人竖版照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-10.jpg" alt="新娘捧花白纱照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-11.jpg" alt="中式喜服近景双人照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-12.jpg" alt="红底中式双人全身照" />
+              </figure>
+              <figure class="carousel-slide">
+                <img src="images/new-photo-13.jpg" alt="室内白纱拖尾单人照" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final section-band">
+        <div class="section-heading">
+          <p>到时见</p>
+          <h2>酒菜备好，就差你这双筷子</h2>
+        </div>
+        <p>
+          没有花哨环节，也不用赶流程。到点来、坐下来、吃顿热闹饭，
+          顺便见证我们把“以后一起吃饭”这件事办成长期合同。
+        </p>
+        <div class="final-box">
+          <strong>具体地址随后补上</strong>
+          <span>安庆农村酒席，确定门牌和定位后会直接更新在这里。请放心，导航不会考验亲友团侦查能力。</span>
+        </div>
+      </section>
+
+      <footer>
+        <p>欢迎来吃席，欢迎来笑，欢迎来把菜吃光</p>
+        <strong>2026.10.03 · 安庆</strong>
+      </footer>
+    </main>
+    <script>
+      (() => {
+        const pets = [...document.querySelectorAll('.pet')];
+        if (!pets.length) return;
+        let ticking = false;
+        const update = () => {
+          const progress = window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+          pets.forEach((pet, index) => {
+            const base = (index % 3) - 1;
+            const drift = Math.max(-24, Math.min(24, (progress * 34 + base * 8) - 12));
+            pet.style.setProperty('--scroll-lift', `${drift}px`);
+          });
+          ticking = false;
+        };
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(update);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll);
+        update();
+      })();
+    </script>
+  </body>
+</html>
