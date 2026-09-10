@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>女方酒席邀请</title>
-    <meta name="description" content="2026.10.02 中午，芜湖女方酒席，诚邀各位亲朋好友前来相聚。" />
+    <title>婚宴邀请</title>
+    <meta name="description" content="2026.10.02 中午，芜湖鸠江女方婚宴酒席，诚邀各位亲朋好友前来相聚。" />
     <meta name="theme-color" content="#fff8f1" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
-    <meta property="og:url" content="https://xiranrumeng-lab.github.io/personal/nvfang.html" />
-    <meta property="og:title" content="女方酒席邀请" />
-    <meta property="og:description" content="2026.10.02 中午，芜湖女方酒席，诚邀各位亲朋好友前来相聚。" />
-    <meta property="og:image" content="https://xiranrumeng-lab.github.io/personal/images/share-cover.jpg" />
+    <meta property="og:title" content="女方婚宴邀请" />
+    <meta property="og:description" content="2026.10.02 中午，芜湖女方婚宴酒席，诚邀各位亲朋好友前来相聚。" />
+    <meta property="og:image" content="images/share-cover.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="陈小姐和查先生的婚礼邀请封面" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="女方酒席邀请" />
-    <meta name="twitter:description" content="2026.10.02 中午，芜湖女方酒席，诚邀各位亲朋好友前来相聚。" />
-    <meta name="twitter:image" content="https://xiranrumeng-lab.github.io/personal/images/share-cover.jpg" />
+    <meta name="twitter:description" content="2026.10.02 中午，芜湖女方婚宴酒席，诚邀各位亲朋好友前来相聚。" />
+    <meta name="twitter:image" content="images/share-cover.jpg" />
     <style>
       :root {
         --ink: #241d1b;
@@ -66,9 +65,9 @@
         inset: 0;
         z-index: 20;
         display: grid;
-        place-items: end center;
+        place-items: center;
         overflow: hidden;
-        padding: 32px 20px 9vh;
+        padding: clamp(24px, 6vw, 48px) 20px;
         background: #061321;
         transition: opacity 500ms ease, visibility 500ms ease;
       }
@@ -106,7 +105,9 @@
       .cover-content {
         position: relative;
         z-index: 2;
-        width: min(520px, 100%);
+        display: grid;
+        justify-items: center;
+        width: min(520px, calc(100vw - 40px));
         color: #fffdf8;
         text-align: center;
       }
@@ -121,16 +122,28 @@
 
       .cover-title {
         margin: 0 0 12px;
-        font-size: clamp(2.5rem, 9vw, 5.4rem);
+        display: grid;
+        justify-items: center;
+        gap: 0.08em;
+        width: 100%;
+        font-size: clamp(1.8rem, 7.5vw, 3.75rem);
         font-weight: 600;
         line-height: 1.04;
       }
 
+      .cover-title-line {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
       .cover-date {
         margin: 0 0 24px;
+        max-width: 100%;
         color: #e9f5fb;
         font-size: clamp(1rem, 2.8vw, 1.3rem);
         line-height: 1.6;
+        text-wrap: balance;
       }
 
       .cover-enter {
@@ -1186,8 +1199,8 @@
     <section class="cover-screen" id="cover-screen" aria-label="邀请函封面">
       <div class="cover-content">
         <p class="cover-eyebrow">Wedding Invitation</p>
-        <h1 class="cover-title">诚邀各位亲朋好友</h1>
-        <p class="cover-date">女方酒席 · 一起吃顿热闹饭<br />2026.10.02 · 芜湖</p>
+        <h1 class="cover-title"><span class="cover-title-line">诚邀各位</span><span class="cover-title-line">亲朋好友</span></h1>
+        <p class="cover-date">一起吃顿热闹饭 · 女方婚宴<br />2026.10.02 · 芜湖鸠江白茆</p>
         <button class="cover-enter" id="cover-enter" type="button">进入邀请函</button>
       </div>
     </section>
@@ -1211,7 +1224,7 @@
             <span class="hero-name-line">陈小姐 &</span>
             <span class="hero-name-line">查先生</span>
           </h1>
-          <p class="hero-line">10.02 中午，女方家在芜湖设宴，诚邀亲朋好友前来相聚。</p>
+          <p class="hero-line">10.02中午，女方家在芜湖鸠江白茆设宴，诚邀亲朋好友前来相聚。</p>
           <div class="hero-actions" aria-label="快速查看邀请信息">
             <a href="#details">看时间地点</a>
             <a href="#guide">吃席攻略</a>
